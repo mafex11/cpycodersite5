@@ -24,18 +24,18 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col items-center justify-center pt-8 md:pt-12"
+        className="flex flex-col items-center justify-center pt-8 md:pt-8"
       >
         <ScrollVelocity 
-          texts={['I F*cking Hate Cursor']} 
+          texts={[' Good things coming!! ']} 
           velocity={100} 
-          className="text-2xl md:text-4xl lg:text-5xl font-bold text-black"
+          className="text-md md:text-4xl lg:text-6xl font-bold text-black"
         />
       </motion.div>
 
       {/* Hero Section */}
       <div className="relative w-full flex items-center justify-center px-4 py-8 md:py-12">
-        <HeroHighlight className="w-full max-w-4xl rounded-2xl overflow-hidden">
+        <HeroHighlight className="w-full max-w-7xl rounded-2xl overflow-hidden">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ export default function Home() {
               <Button asChild variant="secondary" className="w-full sm:w-auto">
                 <Link href="https://marketplace.visualstudio.com/items/?itemName=Mafex.cpycoder" target="_blank">
                   <VscVscodeInsiders className="mr-2" />
-                  Marketplace
+                  VScode Extension
                 </Link>
               </Button>
 
@@ -100,7 +100,7 @@ export default function Home() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
-        className="flex flex-col items-center justify-center w-full px-4 pb-16"
+        className="flex flex-col items-center justify-center w-full px-4 pb-16 pt-16"
       >
         <section className="relative z-10 w-full max-w-2xl md:max-w-3xl">
           <div className="mx-auto bg-white/10 backdrop-blur-lg rounded-2xl p-6 md:p-8 border border-gray-200">
