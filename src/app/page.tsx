@@ -19,11 +19,19 @@ const handleAnimationComplete = () => {
 export default function Home() {
   return (
     <div className="relative w-full min-h-screen overflow-hidden">
+
+<motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex flex-col items-center justify-center"
+          >
       <ScrollVelocity 
           texts={['I F*cking Hate Cursor']} 
           velocity={100} 
-          className="custom-scroll-text mt-4"
+          className="custom-scroll-text mt-6"
         />
+        </motion.div>
 
       {/* Compact Hero Section */}
       <div className="relative w-full mt-10 flex items-center justify-center p-4">
